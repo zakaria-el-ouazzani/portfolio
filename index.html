@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Zakaria El Ouazzani</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- Home -->
+
+  <header class="header">
+    <nav class="navbar box">
+      <a href="#home" class="my-name">Zakaria <span>El Ouazzani</span></a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#home" class="link active">Home</a></li>
+        <li><a href="#about" class="link">About</a></li>
+        <li><a href="#skills" class="link">Skills</a></li>
+        <li><a href="#projects" class="link">Projects</a></li>
+        <li><a href="#contact" class="link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <!-- Home -->
+
+    <section id="home" class="home part">
+      <div class="box home-box">
+        <div class="home-text reveal">
+          <h1>Hello, I am Zakaria <span>El Ouazzani</span></h1>
+          <p>Computer Science Student at EST | Web Development Learner</p>
+
+          <div class="buttons">
+            <a href="#projects" class="btn blue-btn">View Projects</a>
+            <a href="#contact" class="btn border-btn">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="pic-box reveal">
+          <div class="my-pic"></div>
+          <h3>Aspiring Cybersecurity Engineer</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About -->
+
+    <section id="about" class="part">
+      <div class="box">
+        <h2 class="title">About Me</h2>
+
+        <div class="about-card reveal">
+          <p class="text">
+            I am a Computer Science student at EST with a strong interest in technology and problem solving.
+            I am currently learning web development while exploring cybersecurity concepts and best practices.
+            My goal is to build practical technical skills through projects and self-learning, combining programming
+            knowledge with security awareness.
+          </p>
+
+          <p class="text">
+            I am motivated to keep improving, stay updated with modern technologies, and work toward becoming
+            a professional cybersecurity engineer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Skills -->
+
+    <section id="skills" class="part dark">
+      <div class="box">
+        <h2 class="title">Skills</h2>
+
+        <div class="skills">
+          <div class="skill reveal">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML</span>
+          </div>
+
+          <div class="skill reveal">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS</span>
+          </div>
+
+          <div class="skill reveal">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="skill reveal">
+            <i class="fa-solid fa-code"></i>
+            <span>C</span>
+          </div>
+
+          <div class="skill reveal">
+            <i class="fa-brands fa-python"></i>
+            <span>Python</span>
+          </div>
+
+          <div class="skill reveal">
+            <i class="fa-solid fa-palette"></i>
+            <span>Canva</span>
+          </div>
+
+          <div class="skill reveal">
+            <i class="fa-solid fa-database"></i>
+            <span>SQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Project -->
+
+    <section id="projects" class="part projects-section">
+      <div class="box">
+        <h2 class="title">My Projects</h2>
+
+        <p class="text">
+          Here are some of my recent projects.
+        </p>
+
+        <div class="project-list">
+          <article class="project reveal">
+            <img src="images/techworld.png" alt="Computer Store project" class="project-img">
+
+            <div class="project-info">
+              <h3>Techworld</h3>
+              <p>A simple website where I applied what I learned in HTML and CSS.</p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <img src="images/weather.png" alt="Weather App project" class="project-img">
+
+            <div class="project-info">
+              <h3>Weather App</h3>
+              <p>Simple weather app that shows temperature and weather information.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="part dark">
+      <div class="box contact-box">
+        <div class="contact-content reveal">
+          <h2 class="title">Contact Me</h2>
+
+          <p class="text">
+            Send me a message for questions, collaboration, or internship opportunities.
+          </p>
+
+          <div class="contact-icons">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zakariia.el.ouazzani@gmail.com" target="_blank" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://github.com/zakaria-el-ouazzani" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/zakaria-el-ouazzani" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="myForm">
+          <label>
+            Name
+            <input type="text" id="nameBox" placeholder="Your name" />
+          </label>
+
+          <label>
+            Email
+            <input type="email" id="emailBox" placeholder="your@email.com" />
+          </label>
+
+          <label>
+            Message
+            <textarea id="msgBox" rows="6" placeholder="Write your message"></textarea>
+          </label>
+
+          <button type="submit" class="btn blue-btn">Send Message</button>
+
+          <p id="formText"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <p>© 2026 Zakaria El Ouazzani. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
